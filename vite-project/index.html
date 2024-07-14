@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Precious Spa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Precious Spa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#jewelry">Jewelry</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="jewelry">
+            <div class="container">
+                <h2>Jewelry Collection</h2>
+                <div class="filters">
+                    <label for="perPage">Items per Page:</label>
+                    <select id="perPage" onchange="getJewelry(1)">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="20">20</option>
+                    </select>
+
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" placeholder="Enter category" oninput="getJewelry(1)">
+
+                    <label for="metal">Metal:</label>
+                    <input type="text" id="metal" placeholder="Enter metal" oninput="getJewelry(1)">
+
+                    <label for="minPrice">Min Price:</label>
+                    <input type="number" id="minPrice" placeholder="Min price" oninput="getJewelry(1)">
+
+                    <label for="maxPrice">Max Price:</label>
+                    <input type="number" id="maxPrice" placeholder="Max price" oninput="getJewelry(1)">
+                </div>
+                <div id="jewelry-list"></div> <!-- Aquí se listarán las joyas -->
+                <div id="pagination"></div> <!-- Aquí se mostrará la paginación -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Precious Spa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script> <!-- Archivo JavaScript para manejar la lógica de la aplicación -->
+</body>
+</html>

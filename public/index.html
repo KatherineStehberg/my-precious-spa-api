@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Precious Spa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Precious Spa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#collection">Collection</a></li> <!-- Added Collection link -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to My Precious Spa</h2>
+                <p>Your one-stop destination for exquisite jewelry</p>
+                <button class="cta-button" onclick="location.href='#collection'">Explore Collection</button>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At My Precious Spa, we offer a wide range of high-quality jewelry crafted with precision and care. Our pieces are designed to add a touch of elegance to your style.</p>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <img src="./service1.jpg.jpg" alt="Service 1">
+                        <h3>Custom Jewelry</h3>
+                        <p>Get personalized jewelry designed to your specifications.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./service2.jpg" alt="Service 2">
+                        <h3>Jewelry Repair</h3>
+                        <p>Professional repair services to restore your precious pieces.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./service3.jpg" alt="Service 3">
+                        <h3>Consultation</h3>
+                        <p>Expert advice on selecting the perfect jewelry for any occasion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- New Collection section -->
+        <section id="collection">
+            <div class="container">
+                <h2>Our Collection</h2>
+                <div class="collection-grid">
+                    <div class="collection-item">
+                        <img src="./item1.jpg.jfif" alt="Item 1">
+                        <h3>Item 1</h3>
+                        <p>Description of item 1.</p>
+                    </div>
+                    <div class="collection-item">
+                        <img src="./item 2.jpg.jfif" alt="Item 2">
+                        <h3>Item 2</h3>
+                        <p>Description of item 2.</p>
+                    </div>
+                    <!-- Add more collection items as needed -->
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="#" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Precious Spa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
